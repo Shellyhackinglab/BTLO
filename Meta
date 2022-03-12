@@ -1,0 +1,27 @@
+1. Download a zip-file
+2. unzip the file
+3. analyze 2 images in it
+Let's go !!
+
+My first trouble is that I couldn't unzip correctly the first image using Lhaplus(ver1.74) on windows.
+The message was "Something broken, you cannot open it.", however, I got the second one only.
+Then, I tried to another way to unzip this file. When I simply use unzip command, It seems like not suitable for this file.
+You can see underbelow.
+# unzip -p blto cf~~~~~~~~~.zip
+ skipping: uploaded_1.JPG          need PK compat. v5.1 (can do v4.6)
+ skipping: uploaded_2.png          need PK compat. v5.1 (can do v4.6)
+Built-in functions in my OS is too new to unzip this file.
+So, I needed to search another tool supported the old types and found it finally.
+# sudo apt-get install p7zip p7zip-full
+# 7z x cf~~~~~~~.zip -aoa -pblto
+You can see more detail at the bottom of this page.
+ 
+I redirected to other file to analyze easily.
+# exiftool uploaded_1.JPG > data_1
+# exiftool uploaded_2.png > data_2
+The exiftool command is very useful for image information extraction.
+You can see answers in the first image.
+
+
+references:  
+https://askubuntu.com/questions/596761/error-while-unzipping-need-pk-compat-v5-1-can-do-v4-6
