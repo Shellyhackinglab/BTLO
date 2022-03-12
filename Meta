@@ -23,7 +23,12 @@ I redirected to other file to analyze easily.
 # exiftool uploaded_2.png > data_2
 The exiftool command is very useful for image information extraction.
 You can see answers in the first image.
+Or you can use file command which shows more simple info and enough in order to answer some questions excluded the last GPS one.
 
+The most difficult is to figure out the position from GPS and input the correct spelling.
+The original ---> 32 deg 40' 3.87" S, 279 deg 29' 31.87" W
+Substitute for ---> 32°40'3.87"N 81°29' 31.87"E
+And you can see the picture on google map which looks like the second image.
 
 references:  
 https://askubuntu.com/questions/596761/error-while-unzipping-need-pk-compat-v5-1-can-do-v4-6
