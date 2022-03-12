@@ -1,7 +1,9 @@
+### Steps ###############
 1. Download a zip-file
 2. unzip the file
 3. analyze 2 images in it
 Let's go !!
+#########################
 
 My first trouble is that I couldn't unzip correctly the first image using Lhaplus(ver1.74) on windows.
 The message was "Something broken, you cannot open it.", however, I got the second one only.
