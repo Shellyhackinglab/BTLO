@@ -1,0 +1,20 @@
+###Steps#################################
+1. download and unzip the zip file
+2. figure out the architecture of indexes
+3. analyze
+#########################################
+
+You'll try a source-reading this time!!
+The first step is to figure out a whole indexes tree before a source-reading.
+You can see two c files written in PHP in the different directories which look like all the same, but you have to prove it.
+
+I relocated them at the same directory and renamed them in order to access with ease.
+Then you can use diff command to extract the difference between them.
+# diff -s ext_zlib.c source_zlib.c
+Now, you can find these are identical files.
+
+answers:
+Q1) PHP
+Q2) Command Execution
+Q3)
+Q4)
