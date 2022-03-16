@@ -6,25 +6,25 @@
 
 Q1. Count of Events
 I couldn't open the csv file on windows word software, so I used the text file.
-I used "lines of Port number" to count how many events included.
+I used "lines of Sorce Port" to count how many events included.
 # cat BTLO_Bruteforce_Challenge.txt | grep Port: | sort > data_count && wc -l data_count
 Now, you can find out how many lines inside it, however, that's not the answer. 
-When you take a closer look directly, you can find 4 data which has no information about Network stuffs.
+If you take a closer look directly, you can find 4 data which has no information about Network stuffs.
 Considering these 4 data, the answer has to be minus 4 instead of all lines from my one-liner.
 
 Q3. 
 If your computer was setup in not English, you need to switch to English.
 Maybe you cannot get the correct answer on windows because of translation.
-And the answer message differs on windows OS from that one from Linux OS, so I recommend you to use Linux OS ow WSL2.
+And the answer message differs on windows OS from that one from Linux OS, so I recommend you to use Linux OS or WSL2.
 
 Q6. 
 Visit this site.
 https://www.iplocation.net/ip-lookup
 
 Q7.
-In data_conut file, information of ports were already sorted, so all you needed is to look the first line and the last one.
+In data_count file, information of ports were already sorted, so all you need is to look the first line and the last one.
 
-refferences:
+references:
 https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4625
 https://blogs.manageengine.jp/needs_of_auditing_4625/
 https://www.iplocation.net/ip-lookup
