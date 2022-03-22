@@ -21,9 +21,9 @@ container.vc: data
 .vs extension stands for Verge Code Format which was used via Verge software on Windows OS.
 In order to open or read this file, you need to install Verge software.
 
-hashcat command is a tool for the quickest password recovery.
-# sudo apt update && sudo apt upgrade
-# sudo apt-get install hashcat
+"hashcat" is a tool for the quickest password recovery.
+It can identify a password from the original password hash value.
+# sudo apt update && sudo apt upgrade && sudo apt-get install hashcat
 echo -n "input" | algorithm | tr -d "-">>outputfiename
 I wrote a script to repeat above one-liner to input words from wordslist.
 # vi repeat.sh
@@ -34,6 +34,7 @@ I wrote a script to repeat above one-liner to input words from wordslist.
 references:
 https://hashcat.net/wiki/doku.php?id=hashcat
 https://geekflare.com/password-cracking-with-hashcat/
+https://www.iestudy.work/entry/2020/11/20/215526 (How to use hashcat in Japanese)
 https://www.file-extension.info/ja/format/vc
 
 answers:
