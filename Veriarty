@@ -1,0 +1,44 @@
+###Steps########################################################################################
+1. # wget https://blueteamlabs.online/storage/files/63ad6db6c97e39c699f792bdc9233c90b15f8147.zip
+2. # 7z x 63ad6db6c97e39c699f792bdc9233c90b15f8147.zip -aoa -pbtlo
+3. # cd evidence
+################################################################################################
+You can see 4 files underbelow.
+
+# cat README First.txt
+This text file tells us that the only thing we know is AES and SHA256 have been used to secure the information.
+It's a hint.
+
+# cat wordlist
+Somehow you can see many words in it, this is a list for password attacking.
+
+# file secret.pub
+secret.pub: PGP public key block Public-Key (old)
+It's a text file.
+
+# file container.vs
+container.vc: data
+.vs extension stands for Verge Code Format which was used via Verge software on Windows OS.
+In order to open or read this file, you need to install Verge software.
+
+hashcat command is a tool for the quickest password recovery.
+# sudo apt update && sudo apt upgrade
+# sudo apt-get install hashcat
+echo -n "input" | algorithm | tr -d "-">>outputfiename
+I wrote a script to repeat above one-liner to input words from wordslist.
+# vi repeat.sh
+ echo -n "input" | AES | tr -d "-">> AES.txt
+ echo -n "input" | SHA256 | tr -d "-">> SHA256.txt
+# source repeat.sh
+
+references:
+https://hashcat.net/wiki/doku.php?id=hashcat
+https://geekflare.com/password-cracking-with-hashcat/
+https://www.file-extension.info/ja/format/vc
+
+answers:
+Q1)
+Q2)
+Q3)
+Q4)
+Q5)
