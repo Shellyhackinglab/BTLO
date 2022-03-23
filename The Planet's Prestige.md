@@ -34,6 +34,10 @@ I investigated each file...
 I could find a person's name. That's an author, perhaps one of the answers.  
 
 # Q5.  
+I couldn't figure out any contents in the second sheet, "Sheet3", so I exported to a text file from xlsx file format.  
+Then I can see a message inside sheet3.  
+VGhlIE1hcnRpYW4gQ29sb255LCBCZXNpZGUgSW50ZXJwbGFuZXRhcnkgU3BhY2Vwb3J0Lg==  
+It's base64, so I converted it using here (https://www.base64decode.org/) and got a true message.  
 
 # Q6.  
 You can guess from the text mail.  
@@ -43,5 +47,5 @@ Q1) emkei.cz
 Q2) negeja3921@pashter.com
 Q3) .zip
 Q4) Pestero Negeja
-Q5)
+Q5) The Martian Colony, Beside Interplanetary Spaceport.
 Q6) pashter.com
