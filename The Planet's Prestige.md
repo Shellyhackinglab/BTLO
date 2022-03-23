@@ -1,7 +1,7 @@
 # Q1&Q2.  
 You can find the answers in the text mail.  
 ![06_0](https://user-images.githubusercontent.com/39981286/159650511-177f8cac-6b5b-4167-9aa4-8346b49b060a.jpg)  
-![06_1](https://user-images.githubusercontent.com/39981286/159650899-1a6dc19f-3e6c-46b8-ae27-c96a951e2886.jpg)  
+![06_1](https://user-images.githubusercontent.com/39981286/159651897-77269c44-40c7-4884-98a2-1dcda2df9425.jpg)  
 
 # Q3.  
 I couldn't open the attachement because of the decode failure from the mail included the zip, so I needed to use web site here (https://base64.guru/converter/decode/file)  
