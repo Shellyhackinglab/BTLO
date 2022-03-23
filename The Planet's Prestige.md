@@ -9,9 +9,11 @@ You can find the answers in the text mail.
 Q3.  
 I couldn't open the attachement because of the decode failure from the mail included the zip, so I needed to use web site underbelow.
 (https://base64.guru/converter/decode/file)
-And it's the very point that you should convert to file(zip) not to pdf. If you convert to pdf, you cannot read the pdf file output even if you use Adobe software or web browser.
+And it's the very point that you should convert to file(zip) not to pdf. If you convert to pdf, you cannot read the pdf file output even if you use Adobe software or web browser.  
+
 \# unzip application.zip
-Now, you can see a new directory "PuzzleToCoCanDa".
+Now, you can see a new directory "PuzzleToCoCanDa".  
+
 \# cd PuzzleToCoCanDa && ls -l
 -rwxrwxrwx 1 kali kali 18662 Jan 25  2021  DaughtersCrown
 -rwxrwxrwx 1 kali kali 28475 Jan 26  2021  GoodJobMajor
@@ -19,16 +21,18 @@ Now, you can see a new directory "PuzzleToCoCanDa".
 As you know, you can open .xlsx by Microsoft software Excel, and you will find a message from them.
 But be careful to show full space each cells. You need to click a button at the top of the bar.
 
-Let's take a look other files.
+Let's take a look other files.  
+
 \# file DaughtersCrown
-DaughtersCrown: JPEG image data, JFIF standard 1.01, resolution (DPI), density 120x120, segment length 16, baseline, precision 8, 822x435, components 3
+DaughtersCrown: JPEG image data, JFIF standard 1.01, resolution (DPI), density 120x120, segment length 16, baseline, precision 8, 822x435, components 3  
+
 \# file GoodJobMajor
 GoodJobMajor: PDF document, version 1.5, 1 pages
 
-DaughtersCrown looks like .JPEG file and I renamed this file and open. I could see a illustration of Crown.
+DaughtersCrown looks like .JPEG file and I renamed this file and open. I could see a illustration of Crown.  
 GoodJobMajor looks like .pdf file and I rename this file and open.
 
-Q4.
+Q4.  
 I investigated each file...
 # exiftool GoodJobMajor
 I could find a person's name. That's an author, perhaps one of the answers.
