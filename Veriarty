@@ -23,9 +23,21 @@ In order to open or read this file, you need to install Verge software.
 
 "hashcat" is a tool for the quickest password recovery.
 It can identify a password from the original password hash value.
+usage:
+-m flag
+※flag = hash modes (0:MD5,100:SHA1...etc)
+You can see so many hash modes here (https://hashcat.net/wiki/doku.php?id=hashcat).
+
 # sudo apt update && sudo apt upgrade && sudo apt-get install hashcat
 echo -n "input" | algorithm | tr -d "-">>outputfiename
 I wrote a script to repeat above one-liner to input words from wordslist.
+
+<Directory attack>
+# hashcat -m <flag> d41e98d1eafa6d6011d3a70f1a5b92f0 -a 0 <dictionary text file>
+usage:
+-a <flag>
+※flag = attack mode (0:dictionary mode)
+
 # vi repeat.sh
  echo -n "input" | AES | tr -d "-">> AES.txt
  echo -n "input" | SHA256 | tr -d "-">> SHA256.txt
