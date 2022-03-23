@@ -47,7 +47,7 @@ Q1) emkei.cz
 Q2) negeja3921@pashter.com
 Q3) .zip
 Q4) Pestero Negeja
-Q5) The Martian Colony, Beside Interplanetary Spaceport.
+Q5) The Martian Colony, Beside Interplanetary Spaceport
 Q6) pashter.com  
 
 references:  
