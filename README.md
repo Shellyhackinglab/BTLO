@@ -3,5 +3,5 @@ Write up for BTLO begginer
 I write down how did I solve the challenges on BTLO...  
 
 I completed so far...  
-BruteForce  
-The Planet's Prestige  
+🤩02_BruteForce  
+🤩06_The Planet's Prestige  
