@@ -4,7 +4,7 @@
 ###########
 #Q1&Q2.
 You can find the answers in the text mail.  
-<img src="../images/06_0.jpg" alt="text mail">  
+<img src="../../images/06_0.jpg" alt="text mail">  
 
 #Q3.  
 I couldn't open the attachement because of the decode failure from the mail included the zip, so I needed to use web site here (https://base64.guru/converter/decode/file)  
