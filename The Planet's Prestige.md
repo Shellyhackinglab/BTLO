@@ -3,16 +3,16 @@
 
 ###########
 Q1&Q2.
-You can find the answers in the text mail.
-<img src="../images/06_0" alt="text mail">
+You can find the answers in the text mail.  
+<img src="../images/06_0.jpg" alt="text mail">  
 
-Q3.
+Q3.  
 I couldn't open the attachement because of the decode failure from the mail included the zip, so I needed to use web site underbelow.
 (https://base64.guru/converter/decode/file)
 And it's the very point that you should convert to file(zip) not to pdf. If you convert to pdf, you cannot read the pdf file output even if you use Adobe software or web browser.
-# unzip application.zip
+\# unzip application.zip
 Now, you can see a new directory "PuzzleToCoCanDa".
-# cd PuzzleToCoCanDa && ls -l
+\# cd PuzzleToCoCanDa && ls -l
 -rwxrwxrwx 1 kali kali 18662 Jan 25  2021  DaughtersCrown
 -rwxrwxrwx 1 kali kali 28475 Jan 26  2021  GoodJobMajor
 -rwxrwxrwx 1 kali kali 16541 Jan 26  2021  Money.xlsx
@@ -20,9 +20,9 @@ As you know, you can open .xlsx by Microsoft software Excel, and you will find a
 But be careful to show full space each cells. You need to click a button at the top of the bar.
 
 Let's take a look other files.
-# file DaughtersCrown
+\# file DaughtersCrown
 DaughtersCrown: JPEG image data, JFIF standard 1.01, resolution (DPI), density 120x120, segment length 16, baseline, precision 8, 822x435, components 3
-# file GoodJobMajor
+\# file GoodJobMajor
 GoodJobMajor: PDF document, version 1.5, 1 pages
 
 DaughtersCrown looks like .JPEG file and I renamed this file and open. I could see a illustration of Crown.
