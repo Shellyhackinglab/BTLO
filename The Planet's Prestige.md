@@ -30,7 +30,7 @@ GoodJobMajor looks like .pdf file and I rename this file and open.
 
 # Q4.    
 I investigated each file...  
-\# exiftool GoodJobMajor
+\# exiftool GoodJobMajor  
 I could find a person's name. That's an author, perhaps one of the answers.  
 
 # Q5.  
