@@ -1,9 +1,9 @@
-#Q1&Q2.  
+# Q1&Q2.  
 You can find the answers in the text mail.  
 ![06_0](https://user-images.githubusercontent.com/39981286/159650511-177f8cac-6b5b-4167-9aa4-8346b49b060a.jpg)  
 ![06_1](https://user-images.githubusercontent.com/39981286/159650899-1a6dc19f-3e6c-46b8-ae27-c96a951e2886.jpg)  
 
-#Q3.  
+# Q3.  
 I couldn't open the attachement because of the decode failure from the mail included the zip, so I needed to use web site here (https://base64.guru/converter/decode/file)  
 And it's the very point that you should convert to file(zip) not to pdf. If you convert to pdf, you cannot read the pdf file output even if you use Adobe software or web browser.  
 
@@ -28,14 +28,14 @@ DaughtersCrown looks like .JPEG file and I renamed this file and open. I could s
 GoodJobMajor looks like .pdf file and I rename this file and open.  
 ![06_4](https://user-images.githubusercontent.com/39981286/159650758-99181a45-d4d4-4791-a006-164226237807.jpg)  
 
-#Q4.    
+# Q4.    
 I investigated each file...  
 \# exiftool GoodJobMajor
 I could find a person's name. That's an author, perhaps one of the answers.  
 
-#Q5.  
+# Q5.  
 
-#Q6.  
+# Q6.  
 You can guess from the text mail.  
 
 answers:
