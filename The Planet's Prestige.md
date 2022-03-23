@@ -40,7 +40,7 @@ VGhlIE1hcnRpYW4gQ29sb255LCBCZXNpZGUgSW50ZXJwbGFuZXRhcnkgU3BhY2Vwb3J0Lg==
 It's base64, so I converted it using here (https://www.base64decode.org/) and got a true message.  
 
 # Q6.  
-You can guess from the text mail.  
+You can get from the first text mail as well.  
 
 answers:
 Q1) emkei.cz
