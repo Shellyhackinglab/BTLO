@@ -44,7 +44,7 @@ You can get from the first text mail as well.
 
 
 
-answers:
+# answers:
 Q1) emkei.cz
 Q2) negeja3921@pashter.com
 Q3) .zip
@@ -52,7 +52,7 @@ Q4) Pestero Negeja
 Q5) The Martian Colony, Beside Interplanetary Spaceport
 Q6) pashter.com  
 
-references:  
+# references:  
 https://base64.guru/converter/decode/file  
 https://www.base64decode.org/  
 https://medium.com/cryptogennepal/the-planets-prestige-blue-team-labs-online-walkthrough-770a1c13936b  
