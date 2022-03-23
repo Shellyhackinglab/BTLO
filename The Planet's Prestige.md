@@ -23,10 +23,10 @@ DaughtersCrown: JPEG image data, JFIF standard 1.01, resolution (DPI), density 1
 \# file GoodJobMajor
 GoodJobMajor: PDF document, version 1.5, 1 pages  
 DaughtersCrown looks like .JPEG file and I renamed this file and open. I could see a illustration of Crown.  
-![06_3](https://user-images.githubusercontent.com/39981286/159650749-8643b2e5-58eb-492b-83b9-80adc465f0c2.jpg)  
+ ![06_3_small](https://user-images.githubusercontent.com/39981286/159651488-a2cf5556-3f9b-4972-b04b-66d745567789.jpg)  
 
 GoodJobMajor looks like .pdf file and I rename this file and open.  
-![06_4](https://user-images.githubusercontent.com/39981286/159650758-99181a45-d4d4-4791-a006-164226237807.jpg)  
+![06_4_small](https://user-images.githubusercontent.com/39981286/159651500-47a2901a-e7a6-481f-b906-2c7dbaee213f.jpg)  
 
 # Q4.    
 I investigated each file...  
