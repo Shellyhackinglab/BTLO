@@ -3,6 +3,7 @@
 2. # 7z x 63ad6db6c97e39c699f792bdc9233c90b15f8147.zip -aoa -pbtlo
 3. # cd evidence
 ################################################################################################
+[1] Files detail
 You can see 4 files underbelow.
 
 # cat README First.txt
@@ -21,22 +22,57 @@ container.vc: data
 .vs extension stands for Verge Code Format which was used via Verge software on Windows OS.
 In order to open or read this file, you need to install Verge software.
 
+[2] Installation of hashcat
 "hashcat" is a tool for the quickest password recovery.
 It can identify a password from the original password hash value.
+# sudo apt update && sudo apt upgrade && sudo apt-get install hashcat
+echo -n "input" | algorithm | tr -d "-">>outputfiename
+I wrote a script to repeat above one-liner to input words from wordslist.
+
 usage:
 -m flag
 ※flag = hash modes (0:MD5,100:SHA1...etc)
 You can see so many hash modes here (https://hashcat.net/wiki/doku.php?id=hashcat).
+In this challenge, a hint tells us that AES or SHA256 is used, so I tried to take a look on both modes, however, it's too many.
+1400 	SHA2-256
+1410 	sha256($pass.$salt)
+1420 	sha256($salt.$pass)
+1430 	sha256(utf16le($pass).$salt)
+1440 	sha256($salt.utf16le($pass)) 
+1470 	sha256(utf16le($pass))
+21400 	sha256(sha256_bin($pass)) 
+22400 	AES Crypt (SHA256) 
+...etc.
+You can search which modes you should use after -m option if you input underbelow one-liner.
+# hashcat 5f81c277a?????89f37c448da85c6~~~~~~~~~2eb34 -a 0 wordlist
 
-# sudo apt update && sudo apt upgrade && sudo apt-get install hashcat
-echo -n "input" | algorithm | tr -d "-">>outputfiename
-I wrote a script to repeat above one-liner to input words from wordslist.
+The following 8 hash-modes match the structure of your input hash:
+      # | Name                                                | Category
+  ======+=====================================================+======================================
+   1400 | SHA2-256                                            | Raw Hash
+  17400 | SHA3-256                                            | Raw Hash
+  11700 | GOST R 34.11-2012 (Streebog) 256-bit, big-endian    | Raw Hash
+   6900 | GOST R 34.11-94                                     | Raw Hash
+  17800 | Keccak-256                                          | Raw Hash
+   1470 | sha256(utf16le($pass))                              | Raw Hash
+  20800 | sha256(md5($pass))                                  | Raw Hash salted and/or iterated
+  21400 | sha256(sha256_bin($pass))                           | Raw Hash salted and/or iterated
+Please specify the hash-mode with -m [hash-mode].
+
+Now, you can try agein with -m option from these choices.
+Oops, I could find no answer from here...( ;∀;)
 
 <Directory attack>
 # hashcat -m <flag> d41e98d1eafa6d6011d3a70f1a5b92f0 -a 0 <dictionary text file>
 usage:
 -a <flag>
 ※flag = attack mode (0:dictionary mode)
+
+[3] Installation of sha256sum
+You can see from here underbelow.
+https://hana-shin.hatenablog.com/entry/2022/01/04/221001#54-sha256sum%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AB%E3%82%88%E3%82%8B%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%B5%E3%83%A0%E3%81%AE%E8%A8%88%E7%AE%97
+# sha256sum container.vc
+5f81c277a5fea0dd6c7b17be89f37c448da85c6b3acbc8f2fc6df33852eb34a9  container.vc
 
 # vi repeat.sh
  echo -n "input" | AES | tr -d "-">> AES.txt
@@ -48,6 +84,7 @@ https://hashcat.net/wiki/doku.php?id=hashcat
 https://geekflare.com/password-cracking-with-hashcat/
 https://www.iestudy.work/entry/2020/11/20/215526 (How to use hashcat in Japanese)
 https://www.file-extension.info/ja/format/vc
+https://hana-shin.hatenablog.com/entry/2022/01/04/221001#54-sha256sum%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AB%E3%82%88%E3%82%8B%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%B5%E3%83%A0%E3%81%AE%E8%A8%88%E7%AE%97
 
 answers:
 Q1)
