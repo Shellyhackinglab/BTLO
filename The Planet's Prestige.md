@@ -48,4 +48,9 @@ Q2) negeja3921@pashter.com
 Q3) .zip
 Q4) Pestero Negeja
 Q5) The Martian Colony, Beside Interplanetary Spaceport.
-Q6) pashter.com
+Q6) pashter.com  
+
+references:  
+https://www.base64decode.org/  
+https://medium.com/cryptogennepal/the-planets-prestige-blue-team-labs-online-walkthrough-770a1c13936b  
+
